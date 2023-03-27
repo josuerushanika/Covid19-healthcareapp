@@ -19,5 +19,4 @@ function NavbarDetail() {
     </main>
   )
 }
-
 export default NavbarDetail
