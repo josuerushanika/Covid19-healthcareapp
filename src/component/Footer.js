@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
     <footer>
-       <p>&copy; 2023 | Innova Fondation</p>
+       <p>&copy; 2023 | Josue Rushanika</p>
    </footer>
     </div>
   )

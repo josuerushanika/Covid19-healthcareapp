@@ -10,7 +10,6 @@ function NavbarDetail() {
       <div>
       <h1>covid19 App</h1>
       </div>
-
     <div>
       <BiMicrophone/>
       <AiOutlineSetting/>
