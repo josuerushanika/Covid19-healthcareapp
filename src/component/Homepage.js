@@ -1,13 +1,18 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import Header from './Header';
 import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
+import {fetchSummary} from '../redux/DetailsSlice/DetailsSlice'
 
 function Homepage() {
-  const dispatch = useDispatch();
-  const details = useSelector((state) => state.details);
+  const { summary } = useSelector((state) => state.summary);
 
+  const dispatch = useDispatch();
+  useEffect(() => {
+     dispatch(fetchSummary())
+  })
 
   return (
     <main>
@@ -19,6 +24,13 @@ function Homepage() {
        />
        <div>
         <h3>CountryName: Countries.Country</h3>
+
+        <div>
+         {/* {summary.map((Countries) =>{
+          <h2>{Countries.Country}</h2>
+         })} */}
+        </div>
+
         <h2> Countries.Date</h2>
        </div>
       <Footer />
@@ -27,4 +39,5 @@ function Homepage() {
 }
 
 export default Homepage;
+
 

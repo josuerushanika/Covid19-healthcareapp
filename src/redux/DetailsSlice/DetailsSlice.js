@@ -12,6 +12,7 @@ const initialState = {
    summary: [],
    status: 'idle',
    error: null,
+   country: {}
 };
 
 const summarySlice = createSlice({
