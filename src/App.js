@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
-import NavbarDetail from './component/NavbarDetail'
+import NavbarDetail from './component/NavbarDetail';
+import Home from './component/Homepage'
 import {fetchSummary} from './redux/DetailsSlice/DetailsSlice'
 import { useDispatch } from 'react-redux';
 
@@ -16,7 +17,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="details/:id" element={<Detailpage />} />
+      <Route path="details/" element={<Detailpage />} />
     </Routes>
   </BrowserRouter>
   );
