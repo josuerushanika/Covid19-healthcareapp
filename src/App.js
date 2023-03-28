@@ -1,5 +1,5 @@
 import './App.css';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import NavbarDetail from './component/NavbarDetail'
 import {fetchSummary} from './redux/DetailsSlice/DetailsSlice'
@@ -13,8 +13,12 @@ function App() {
 
   },[dispatch])
   return (
-    <><NavbarDetail /><div className="App">
-    </div></>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="details/:id" element={<Detailpage />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
