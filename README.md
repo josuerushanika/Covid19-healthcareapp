@@ -27,10 +27,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Cryptocurrency app] <a name="about-project"></a>
+# 📖 [COVID19 App] <a name="about-project"></a>
 
 
-**[Cryptocurrency app]**  This is a cryptocurrency app that fetches crypto`s from an API and the user can search for a specific coin and see the details of the coin.
+**[COVID19 App]**  This is a cryptocurrency app that fetches crypto`s from an API and the user can search for a specific coin and see the details of the coin.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -152,23 +152,6 @@ I would like to thank Microverse for the great resources shared.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional)
-
-<!-- ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
