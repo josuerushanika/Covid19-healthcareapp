@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Header from './Header';
 import { SiBuzzfeed } from "react-icons/si";
-import NavbarDetail from './NavbarDetail';
+import Navbar from './NavbarDetail';
 import Footer from './Footer';
 import {fetchSummary, filteritem, handleChange} from '../redux/DetailsSlice/DetailsSlice'
 import { Link } from 'react-router-dom';
@@ -24,7 +24,7 @@ function Homepage() {
   
   return (
     <main>
-      <NavbarDetail />
+      <Navbar />
       <Header />
        <input 
        className={styles.inputData}
