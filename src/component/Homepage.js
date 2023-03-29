@@ -15,7 +15,6 @@ function Homepage() {
   useEffect(() => {
      dispatch(fetchSummary())
   },[])
-//console.log(summary);
   return (
     <main>
       <NavbarDetail />
@@ -29,16 +28,15 @@ function Homepage() {
 
         <ul>
          {summary.map((Countries) =>(
-
-                 
-                 <><SiBuzzfeed /><li>
+          <li>
+            <button>
+               <Link to={`/details/${Countries.TotalDeaths}`}><SiBuzzfeed /></Link>
+             </button>
              <img src='' alt='' />
              <span>{Countries.Country}</span>
              <h3> Total Case Confirmed :{Countries.TotalConfirmed}</h3>
-             <button>
-               <Link to={`/details/${Countries.TotalDeaths}`}></Link>
-             </button>
-           </li></>
+             
+           </li>
           )
 
          )}
