@@ -7,7 +7,7 @@ function NavbarDetail() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.title}>
-        <h1 className={styles.titleText}>COVID19 App</h1>
+        <h1 className={styles.titleText}>Covid19 App</h1>
       </div>
       <div className={styles.icons}>
         <BiMicrophone className={styles.icon} />
