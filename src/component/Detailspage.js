@@ -3,40 +3,40 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import Footer from './Footer';
 function Detailspage() {
+  const { summary } = useSelector((state) => state.summary);
   const {id}=useParams()
-
+  const Countries = summary.find(item => item.Country === id)
+  console.log(Countries)
   return (
-    <>
+
     <main>
-    <>
           <main>
             <div >
               <h1></h1>
             </div>
-            <div >{country}</div>
             <div >
               <div>
                 <p>Name:</p>
-                <p>{Countries.Country}</p>
+                <p>{Countries?.Country}</p>
               </div>
               <div >
                 <p>TotalConfirmed</p>
                 <p >
-                  <span>{Countries.TotalConfirmed}</span>
+                  <span>{Countries?.TotalConfirmed}</span>
                 </p>
               </div>
               <div>
                 <p >NewDeaths</p>
-                <p >{Countries.NewDeaths}</p>
+                <p >{Countries?.NewDeaths}</p>
               </div>
               <div>
                 <p >TotalDeaths:</p>
-                <p >{Countries.TotalDeaths}</p>
+                <p >{Countries?.TotalDeaths}</p>
               </div>
 
               <div>
                 <p> NewRecovered:</p>
-                <p >{Countries.NewRecovered}</p>
+                <p >{Countries?.NewRecovered}</p>
               </div>
 
             </div>
@@ -44,23 +44,20 @@ function Detailspage() {
             <div >
               <div>
                 <p>TotalRecovered</p>
-                <p >{Countries.NewRecovered}</p>
+                <p >{Countries?.NewRecovered}</p>
               </div>
 
               <div>
                 <p>Date</p>
                 <p>
                   <span>Dates</span>
-                  {Countries.Date}
+                  {Countries?.Date}
                 </p>
               </div>
             </div>
-          </main>
+           </main> 
           <Footer />
-        </>
-    </main>
-    </>
-    <h1>{id}</h1>
+        </main>
   )
 }
 

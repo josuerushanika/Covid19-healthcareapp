@@ -9,6 +9,7 @@ export const fetchSummary = createAsyncThunk('summary/fetchSummary', async () =>
 })
 
 const initialState = {
+   searchvalue: '', 
    summary: [],
    status: 'idle',
    error: null,
@@ -18,7 +19,20 @@ const initialState = {
 const summarySlice = createSlice({
     name: 'summary',
     initialState,
-    reducers: {},
+    reducers: {
+        handleChange: (
+            state,action
+        ) => {return{...state,searchvalue: action.payload}},
+
+        filteritem: (
+            state
+        ) => {
+            const newsummary = state.summary.filter(item => item.Country.includes (state.searchvalue))
+            return{...state, summary:newsummary}
+    },
+
+    },
+    
     extraReducers: (builder) => {
         builder.addCase(fetchSummary.pending, (state) =>({
             ...state,
@@ -36,5 +50,5 @@ const summarySlice = createSlice({
           }));
     }
 })
-
+export const {handleChange, filteritem}=summarySlice.actions
 export default summarySlice.reducer;
