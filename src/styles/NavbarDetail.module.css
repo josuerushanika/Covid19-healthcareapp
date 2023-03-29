@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    background-color: bisque;
+    /* background-color: bisque; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     color: #fff;
     -webkit-column-gap: 10rem;

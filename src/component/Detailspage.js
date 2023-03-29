@@ -12,7 +12,6 @@ function Detailspage() {
     <main>
           <main>
             <div >
-              <h1></h1>
             </div>
             <div >
               <div>
@@ -33,20 +32,16 @@ function Detailspage() {
                 <p >TotalDeaths:</p>
                 <p >{Countries?.TotalDeaths}</p>
               </div>
-
               <div>
                 <p> NewRecovered:</p>
                 <p >{Countries?.NewRecovered}</p>
               </div>
-
             </div>
-          
             <div >
               <div>
                 <p>TotalRecovered</p>
                 <p >{Countries?.NewRecovered}</p>
               </div>
-
               <div>
                 <p>Date</p>
                 <p>

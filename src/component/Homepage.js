@@ -7,10 +7,11 @@ import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
 import {fetchSummary, filteritem, handleChange} from '../redux/DetailsSlice/DetailsSlice'
 import { Link } from 'react-router-dom';
+import styles from '../styles/Home.module.css';
+import img from '../img/img.jpg';
 
 function Homepage() {
   const { summary, searchvalue} = useSelector((state) => state.summary);
-
   const dispatch = useDispatch();
   useEffect(() => {
      dispatch(fetchSummary())
@@ -26,24 +27,21 @@ function Homepage() {
       <NavbarDetail />
       <Header />
        <input 
+       className={styles.inputData}
         type="text"
         placeholder='Search your Country'
         value = {searchvalue} 
         onChange={(e)=>dispatch(handleChange(e.target.value))}
        />
-       <div>
+       <div className={styles.maindiv}>
         <h3>CountryName: Countries.Country</h3>
-
-        <ul>
+        <ul className={styles.ulwrapper}>
          {summary.map((Countries) =>(
-          <li>
-            <button>
-               <Link to={`/details/${Countries.Country}`}><SiBuzzfeed /></Link>
-             </button>
-             <img src='' alt='' />
+          <li className={styles.liwrapper}>
+             <img  className={styles.img} src={img} alt='' />
              <span>{Countries.Country}</span>
+             <Link  className={styles.link} to={`/details/${Countries.Country}`}><SiBuzzfeed /></Link>
              <h3> Total Case Confirmed :{Countries.TotalConfirmed}</h3>
-             
            </li>
           )
 
