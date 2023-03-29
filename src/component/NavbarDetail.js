@@ -1,21 +1,19 @@
 import React from 'react';
-//import { NavLink } from 'react-router-dom';
 import { AiOutlineSetting } from 'react-icons/ai';
 import { BiMicrophone } from 'react-icons/bi';
-//import { IoIosArrowBack } from 'react-icons/io';
+import styles from '../styles/NavbarDetail.module.css';
 
 function NavbarDetail() {
   return (
-    <main>
-      <div>
-      <h1>covid19 App</h1>
+    <nav className={styles.navbar}>
+      <div className={styles.title}>
+        <h1 className={styles.titleText}>COVID19 App</h1>
       </div>
-    <div>
-      <BiMicrophone/>
-      <AiOutlineSetting/>
-    </div>
-
-    </main>
-  )
+      <div className={styles.icons}>
+        <BiMicrophone className={styles.icon} />
+        <AiOutlineSetting className={styles.icon} />
+      </div>
+    </nav>
+  );
 }
 export default NavbarDetail
