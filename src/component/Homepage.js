@@ -5,6 +5,7 @@ import Header from './Header';
 import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
 import {fetchSummary} from '../redux/DetailsSlice/DetailsSlice'
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   const { summary } = useSelector((state) => state.summary);
@@ -12,8 +13,8 @@ function Homepage() {
   const dispatch = useDispatch();
   useEffect(() => {
      dispatch(fetchSummary())
-  })
-console.log('summas');
+  },[])
+console.log(summary);
   return (
     <main>
       <NavbarDetail />
@@ -26,9 +27,9 @@ console.log('summas');
         <h3>CountryName: Countries.Country</h3>
 
         <div>
-         {summary.map((Countries) =>{
-          <h2>{Countries.Country}</h2>
-         })}
+         {summary.map((Countries) =>(
+          <Link to={`/details/${Countries.TotalDeaths}`}>{Countries.Country}</Link>)
+         )}
         </div>
         <h2> Countries.Date</h2>
        </div>
