@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Header from './Header';
+import { SiBuzzfeed } from "react-icons/si";
 import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
 import {fetchSummary} from '../redux/DetailsSlice/DetailsSlice'
@@ -14,7 +15,7 @@ function Homepage() {
   useEffect(() => {
      dispatch(fetchSummary())
   },[])
-console.log(summary);
+//console.log(summary);
   return (
     <main>
       <NavbarDetail />
@@ -26,12 +27,22 @@ console.log(summary);
        <div>
         <h3>CountryName: Countries.Country</h3>
 
-        <div>
+        <ul>
          {summary.map((Countries) =>(
-          <Link to={`/details/${Countries.TotalDeaths}`}>{Countries.Country}</Link>)
+
+                 
+                 <><SiBuzzfeed /><li>
+             <img src='' alt='' />
+             <span>{Countries.Country}</span>
+             <h3> Total Case Confirmed :{Countries.TotalConfirmed}</h3>
+             <button>
+               <Link to={`/details/${Countries.TotalDeaths}`}></Link>
+             </button>
+           </li></>
+          )
+
          )}
-        </div>
-        <h2> Countries.Date</h2>
+        </ul>
        </div>
       <Footer />
     </main>
