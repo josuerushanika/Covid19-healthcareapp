@@ -13,7 +13,7 @@ function Homepage() {
   useEffect(() => {
      dispatch(fetchSummary())
   })
-
+console.log('summas');
   return (
     <main>
       <NavbarDetail />
@@ -26,11 +26,10 @@ function Homepage() {
         <h3>CountryName: Countries.Country</h3>
 
         <div>
-         {/* {summary.map((Countries) =>{
+         {summary.map((Countries) =>{
           <h2>{Countries.Country}</h2>
-         })} */}
+         })}
         </div>
-
         <h2> Countries.Date</h2>
        </div>
       <Footer />
