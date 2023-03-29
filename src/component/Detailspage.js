@@ -1,17 +1,23 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
+//import { Link } from 'react-router-dom';
+//import styles from '../styles/Home.module.css';
+//import { SiBuzzfeed } from "react-icons/si";
 function Detailspage() {
+  const history = useNavigate();
   const { summary } = useSelector((state) => state.summary);
   const {id}=useParams()
   const Countries = summary.find(item => item.Country === id)
-  console.log(Countries)
   return (
 
     <main>
           <main>
-            <div >
+             <div>
+            <NavbarDetail/> 
+            <button onClick={() => history(-1)}>Go Back</button>
             </div>
             <div >
               <div>
