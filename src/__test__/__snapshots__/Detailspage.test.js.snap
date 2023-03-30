@@ -11,10 +11,9 @@ Object {
         <main
           class="maindiv"
         >
-          <li
+          <boutton
             class="backIcon"
           >
-             
             <svg
               fill="currentColor"
               height="1em"
@@ -29,9 +28,7 @@ Object {
                 d="M0.5 8l7.5 7.5v-4.5h8v-6h-8v-4.5z"
               />
             </svg>
-             
-          </li>
-          <span />
+          </boutton>
           <nav
             class="navbar"
           >
@@ -86,12 +83,13 @@ Object {
             <h3
               class="titledetail"
             >
-               Cases
+               
+              Cases
             </h3>
             <p
               class="head"
             >
-                
+               
             </p>
             <img
               alt="img2"
@@ -109,17 +107,19 @@ Object {
           >
             <div>
               <p>
-                NewDeaths : 
+                NewDeaths :
               </p>
             </div>
             <div>
               <p>
-                 TotalDeaths:   
+                 
+                TotalDeaths:
               </p>
             </div>
             <div>
               <p>
-                 NewRecovered:  
+                 
+                NewRecovered:
               </p>
             </div>
           </div>
@@ -128,7 +128,8 @@ Object {
           >
             <div>
               <p>
-                 TotalRecovered : 
+                 
+                TotalRecovered :
               </p>
             </div>
             <div>
@@ -147,7 +148,8 @@ Object {
             <p
               class="footerText"
             >
-              © 2023 | 
+              © 2023 |
+               
               <span
                 class="footerName"
               >
@@ -166,10 +168,9 @@ Object {
       <main
         class="maindiv"
       >
-        <li
+        <boutton
           class="backIcon"
         >
-           
           <svg
             fill="currentColor"
             height="1em"
@@ -184,9 +185,7 @@ Object {
               d="M0.5 8l7.5 7.5v-4.5h8v-6h-8v-4.5z"
             />
           </svg>
-           
-        </li>
-        <span />
+        </boutton>
         <nav
           class="navbar"
         >
@@ -241,12 +240,13 @@ Object {
           <h3
             class="titledetail"
           >
-             Cases
+             
+            Cases
           </h3>
           <p
             class="head"
           >
-              
+             
           </p>
           <img
             alt="img2"
@@ -264,17 +264,19 @@ Object {
         >
           <div>
             <p>
-              NewDeaths : 
+              NewDeaths :
             </p>
           </div>
           <div>
             <p>
-               TotalDeaths:   
+               
+              TotalDeaths:
             </p>
           </div>
           <div>
             <p>
-               NewRecovered:  
+               
+              NewRecovered:
             </p>
           </div>
         </div>
@@ -283,7 +285,8 @@ Object {
         >
           <div>
             <p>
-               TotalRecovered : 
+               
+              TotalRecovered :
             </p>
           </div>
           <div>
@@ -302,7 +305,8 @@ Object {
           <p
             class="footerText"
           >
-            © 2023 | 
+            © 2023 |
+             
             <span
               class="footerName"
             >

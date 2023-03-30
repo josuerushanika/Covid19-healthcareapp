@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page Reneder Page`] = `<div />`;
-
 exports[`Home test for  rendering render all rendering from api 1`] = `
 Object {
   "asFragment": [Function],
@@ -83,7 +81,8 @@ Object {
             <p
               class="footerText"
             >
-              © 2023 | 
+              © 2023 |
+               
               <span
                 class="footerName"
               >
@@ -172,7 +171,8 @@ Object {
           <p
             class="footerText"
           >
-            © 2023 | 
+            © 2023 |
+             
             <span
               class="footerName"
             >
