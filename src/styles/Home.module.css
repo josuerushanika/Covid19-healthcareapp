@@ -1,33 +1,48 @@
+.mainwrapper {
+  width: 100% ;
+}
+
 .inputData {
+    margin: auto;
     padding: 10px;
     border: 2px solid #ccc;
+    justify-content: center;
     border-radius: 5px;
     font-size: 16px;
-    width: 300px;
     margin-bottom: 10px;
+    background-color:#1c1c1e;
+    color: white;
+    width: 80%;
+    font-family: 'Roboto Slab', serif;
   }
    .maindiv {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 300px;
-    margin: auto;
-    height: 50vh;
-  }
-  
-  .ulwrapper {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .liwrapper {
+    width: 100%;
     display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow:wrap ; */
+  }
+  
+  
+  .divwrapper {
+    width: 50%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .divwrapper:nth-child(4n + 2),
+  .divwrapper:nth-child(4n + 3) {
+    background-color: rgb(87, 82, 82);
+  }
+
+  .itemtile {
+    padding-top: 1rem;
+    font-family: 'Roboto Slab', serif;
   }
   
   img {

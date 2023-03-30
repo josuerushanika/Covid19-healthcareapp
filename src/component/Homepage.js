@@ -23,7 +23,7 @@ function Homepage() {
  },[searchvalue])
   
   return (
-    <main>
+    <main className={styles.mainwrapper}>
       <Navbar />
       <Header />
        <input 
@@ -33,21 +33,21 @@ function Homepage() {
         value = {searchvalue} 
         onChange={(e)=>dispatch(handleChange(e.target.value))}
        />
-       <div className={styles.maindiv}>
-        <h3>CountryName: Countries.Country</h3>
-        <ul className={styles.ulwrapper}>
+       <ul className={styles.maindiv}>
+       
          {summary.map((Countries) =>(
-          <li className={styles.liwrapper}>
-             <img  className={styles.img} src={img} alt='' />
-             <span>{Countries.Country}</span>
+          <li className={styles.divwrapper}>
+             <img  className={styles.img} src={img} alt='img' />
+             <span className={styles.items}>{Countries.Country}</span>
+           
+             <h3 className={styles.itemtile}> Total Case Confirmed :{Countries.TotalConfirmed}</h3>
              <Link  className={styles.link} to={`/details/${Countries.Country}`}><SiBuzzfeed /></Link>
-             <h3> Total Case Confirmed :{Countries.TotalConfirmed}</h3>
            </li>
           )
 
          )}
-        </ul>
-       </div>
+       
+       </ul>
       <Footer />
     </main>
   );
