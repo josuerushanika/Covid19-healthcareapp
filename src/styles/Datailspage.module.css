@@ -1,4 +1,4 @@
-.backIcon  {
+.backIcon {
   list-style: none;
   position: relative;
   top: 45px;
@@ -9,7 +9,7 @@
   font-size: 2rem;
 }
 
-.titledetail  {
+.titledetail {
   padding-top: 5rem;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .updateinfos2 {
-  background-color:grey;
+  background-color: grey;
   color: white;
   padding: 2rem;
   font-size: larger;
