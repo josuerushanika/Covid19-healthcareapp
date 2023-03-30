@@ -6,10 +6,16 @@
 
 .head {
   padding-bottom: 3px;
+  font-size: 2rem;
+}
+
+.titledetail  {
+  padding-top: 5rem;
 }
 
 .image {
   width: 60px;
+  display: block;
 }
 
 .updateinfos {
@@ -38,7 +44,6 @@
 
 .countrydetails {
   display: flex;
-  justify-content: center;
   flex-direction: row-reverse;
   background-color: grey;
   color: white;

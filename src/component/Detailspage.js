@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom';
-import Navbar from './NavbarDetail';
+import NavbarDetail from './NavbarDetail';
 import Footer from './Footer';
 import {ImArrowLeft } from "react-icons/im";
 import styling from '../styles/Datailspage.module.css';
@@ -18,11 +18,10 @@ function Detailspage() {
           <main className={ styling.maindiv  }>
             <li  className={ styling.backIcon } onClick={() => history(-1)}> <  ImArrowLeft/> </li>
             <span></span>
-          <Navbar />
-            
+            <NavbarDetail />
             
               <div className={ styling.countrydetails }>
-              <h3>{Countries?.TotalConfirmed} Cases</h3>
+              <h3 className={ styling.titledetail } >{Countries?.TotalConfirmed} Cases</h3>
                 <p className={ styling.head } >  {Countries?.Country}</p>
                 <img  className={styling.image} src={img2} alt='img2' />
               </div>
