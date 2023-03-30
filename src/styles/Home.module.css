@@ -10,7 +10,7 @@
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 10px;
-    background-color:#1c1c1e;
+    background-color:gray;
     color: white;
     width: 80%;
     font-family: 'Roboto Slab', serif;
@@ -20,10 +20,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-flow:wrap ; */
   }
-  
-  
+    
   .divwrapper {
     width: 50%;
     text-align: center;
@@ -49,6 +47,7 @@
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    float: right;
   }
   
   span {
@@ -62,7 +61,10 @@
     margin: 0;
   }
   
-  .Link{
+  .link{
     margin-left: auto;
-    color: #333;
+    color: white;
+    padding-top: 12px;
+    position: relative;
+    bottom: 100px;
   }

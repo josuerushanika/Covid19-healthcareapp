@@ -1,12 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom';
-import NavbarDetail from './NavbarDetail';
+import Navbar from './NavbarDetail';
 import Footer from './Footer';
-//import { BiRightArrowCircle } from 'react-icons/bi';
-//import { Link } from 'react-router-dom';
-//import { SiBuzzfeed } from "react-icons/si";
+import {ImArrowLeft } from "react-icons/im";
 import styling from '../styles/Datailspage.module.css';
+import img from '../img/img.jpg';
 
 function Detailspage() {
   const history = useNavigate();
@@ -17,18 +16,15 @@ function Detailspage() {
 
     <main className={ styling.mainwrapper }>
           <main className={ styling.maindiv  }>
-          <NavbarDetail/> 
-             <div>
-            <button className={ styling.button } onClick={() => history(-1)}>Go Back</button>
-            </div>
+            <li  className={ styling.backIcon } onClick={() => history(-1)}> <  ImArrowLeft/> </li>
+            <span></span>
+          <Navbar />
+            
             <div >
-              <div className={ styling.country }>
+              <div className={ styling.countrydetails }>
                 <p> Country Name : {Countries?.Country}</p>
-              </div>
-              <div >
-                <p >
-                  <span>TotalConfirmed : {Countries?.TotalConfirmed}</span>
-                </p>
+                <span>TotalConfirmed : {Countries?.TotalConfirmed}</span>
+                <img  className={styling.img} src={img} alt='img' />
               </div>
               <div>
                 <p >NewDeaths : {Countries?.NewDeaths}</p>
