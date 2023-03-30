@@ -4,7 +4,6 @@ const ulr = 'https://api.covid19api.com/summary';
 
 export const fetchSummary = createAsyncThunk('summary/fetchSummary', async () => {
     const res = await axios.get(ulr);
-    console.log(res)
     return res.data.Countries;
 })
 

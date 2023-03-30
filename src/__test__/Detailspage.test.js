@@ -1,21 +1,19 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { TestRenderer } from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../redux/store';
-import Homepage from '../component/Homepage';
+import Detailspage from '../component/Detailspage';
 
-describe('Home test for  rendering', () => {
-  test('render all rendering from api', () => {
-    const homepage = render(
+describe('Details page test for components', () => {
+  test('render each  page details', () => {
+    const detailspage = render(
       <Provider store={store}>
         <BrowserRouter>
-          <Homepage />
+          <Detailspage />
         </BrowserRouter>
       </Provider>,
     );
-    expect(homepage).toMatchSnapshot();
+    expect(detailspage).toMatchSnapshot();
   });
 });
-

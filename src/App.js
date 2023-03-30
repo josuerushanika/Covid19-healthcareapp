@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
-import NavbarDetail from './component/NavbarDetail';
 import Homepage from './component/Homepage'
 import Detailspage from './component/Detailspage';
 import {fetchSummary} from './redux/DetailsSlice/DetailsSlice'
