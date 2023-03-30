@@ -5,7 +5,7 @@ import Navbar from './NavbarDetail';
 import Footer from './Footer';
 import {ImArrowLeft } from "react-icons/im";
 import styling from '../styles/Datailspage.module.css';
-import img from '../img/img.jpg';
+import img2 from '../img/img2.png';
 
 function Detailspage() {
   const history = useNavigate();
@@ -20,12 +20,15 @@ function Detailspage() {
             <span></span>
           <Navbar />
             
-            <div >
+            
               <div className={ styling.countrydetails }>
-                <p> Country Name : {Countries?.Country}</p>
-                <span>TotalConfirmed : {Countries?.TotalConfirmed}</span>
-                <img  className={styling.img} src={img} alt='img' />
+              <h3>{Countries?.TotalConfirmed} Cases</h3>
+                <p className={ styling.head } >  {Countries?.Country}</p>
+                <img  className={styling.image} src={img2} alt='img2' />
               </div>
+              <div className={styling.updateinfos}>Infos update</div>
+
+             <div className={styling.updatecenter} >
               <div>
                 <p >NewDeaths : {Countries?.NewDeaths}</p>
               </div>
@@ -35,8 +38,10 @@ function Detailspage() {
               <div>
                 <p > NewRecovered:  {Countries?.NewRecovered}</p>
               </div>
-            </div>
-            <div >
+            </div>       
+           
+
+            <div className={styling.updateinfos2} >
               <div>
                 <p > TotalRecovered : {Countries?.NewRecovered}</p>
               </div>

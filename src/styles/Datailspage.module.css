@@ -2,7 +2,38 @@
   list-style: none;
   position: relative;
   top: 45px;
-  /* width: 20px; */
+}
+
+.head {
+  padding-bottom: 3px;
+}
+
+.image {
+  width: 60px;
+}
+
+.updateinfos {
+  background-color: rgb(87, 82, 82);
+  color: white;
+  padding: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.updateinfos2 {
+  background-color:grey;
+  color: white;
+  padding: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.updatecenter {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  padding: 2rem;
 }
 
 .countrydetails {
