@@ -3,7 +3,7 @@ import { AiOutlineSetting } from 'react-icons/ai';
 import { BiMicrophone } from 'react-icons/bi';
 import styles from '../styles/NavbarDetail.module.css';
 
-function NavbarDetail() {
+function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.title}>
@@ -16,4 +16,4 @@ function NavbarDetail() {
     </nav>
   );
 }
-export default NavbarDetail;
+export default Navbar;

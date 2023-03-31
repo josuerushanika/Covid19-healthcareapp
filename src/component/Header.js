@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import styles from '../styles/Header.module.css';
 
 function Header() {
   return (
-    <div>
-      <h2> COVID-19 Health Apps</h2>
-      <p>We searched for the mHealth apps using the term “COVID-19</p>
+    <div className={styles.header}>
+      <h2 className={styles.title}>COVID-19 Cases By Country</h2>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

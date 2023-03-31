@@ -1,0 +1,19 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c1c1e;
+  color: #fff;
+  text-align: center;
+}
+
+.footerText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footerName {
+  font-weight: bold;
+}

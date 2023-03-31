@@ -1,0 +1,74 @@
+.mainwrapper {
+  width: 100%;
+}
+
+.inputData {
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background-color: gray;
+  color: black;
+  width: 93%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.maindiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.divwrapper {
+  width: 50%;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+}
+
+.divwrapper:nth-child(4n + 2),
+.divwrapper:nth-child(4n + 3) {
+  background-color: rgb(87, 82, 82);
+}
+
+.itemtile {
+  padding-top: 1rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: right;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.link {
+  margin-left: auto;
+  color: white;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 100px;
+  padding-right: 0.5rem;
+}

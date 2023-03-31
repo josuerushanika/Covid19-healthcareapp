@@ -1,4 +1,4 @@
-# Cryptocurrency app
+# Covid 19 API app
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
@@ -27,10 +27,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Cryptocurrency app] <a name="about-project"></a>
+# 📖 [COVID19 App] <a name="about-project"></a>
 
 
-**[Cryptocurrency app]**  This is a cryptocurrency app that fetches crypto`s from an API and the user can search for a specific coin and see the details of the coin.
+**[COVID19 App]**  The objective of this research is to explore the existing mobile applications developed for the COVID-19 pandemic. To obtain  case per  country. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,12 +55,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://covid19app3.netlify.app/)
 
 
 ## 📹 Video Description
 
-- [Video Description Link]()
+- [Video Description Link](https://www.loom.com/share/8dccddc4e81a46cdb78de3d7c48cc39d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +82,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-1. Go to the [repository page](https://github.com/shaaibu7/cryptocurrency-app).
+1. Go to the [repository page](https://github.com/josuerushanika/react-capstone).
 2. Press the "Code" button and copy the link.
 3. Clone it using git command `git clone <link>`.
 
@@ -152,27 +152,10 @@ I would like to thank Microverse for the great resources shared.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional)
-
-<!-- ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

@@ -1,0 +1,52 @@
+.backIcon {
+  list-style: none;
+  position: relative;
+  top: 45px;
+}
+
+.head {
+  padding-bottom: 3px;
+  font-size: 2rem;
+}
+
+.titledetail {
+  padding-top: 5rem;
+}
+
+.image {
+  width: 60px;
+  display: block;
+}
+
+.updateinfos {
+  background-color: rgb(87, 82, 82);
+  color: white;
+  padding: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.updateinfos2 {
+  background-color: grey;
+  color: white;
+  padding: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+}
+
+.updatecenter {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+.countrydetails {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: grey;
+  color: white;
+  padding: 2.5rem;
+  font-family: 'Roboto Slab', serif;
+}
